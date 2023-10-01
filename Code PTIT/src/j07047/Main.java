@@ -36,3 +36,19 @@ public class Main {
         }
     }
 }
+//Input
+//2
+//C THUONG 150 0.03
+//B VIP 200 0.05
+//2
+//Nguyen Van Hoang
+//55B1
+//01/01/2021
+//05/01/2021
+//Nguyen Trung Dung
+//04C6
+//01/01/2021
+//10/01/2021
+//Output
+//KH02 Nguyen Trung Dung 04C6 9 1390.50
+//KH01 Nguyen Van Hoang 55B1 4 840.00
