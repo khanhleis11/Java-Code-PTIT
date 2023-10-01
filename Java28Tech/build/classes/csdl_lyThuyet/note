@@ -1,0 +1,13 @@
+trong mối quan hệ n - n (nhiều nhiều) thì 
+quan hệ biến thành thực thể (tức là nó có thuộc tính)
+
+và không cần thêm bảng trong tất cả trường hợp còn lại
+
+Cụ thể: 1 - N --> thì chỉ cần thêm khóa ngoại
+    vào thuộc tính của thực thể nhiều
+N - N --> tạo bảng mới là bảng quan hệ. Khóa chính của tập
+    thực thể đso là kết hợp của 2 khóa chính của 2 tập thực thể còn lại
+    
+    Ví dụ: Sinh Viên -- đăng kí -- Môn học
+    
+Buổi 12: 39:21
