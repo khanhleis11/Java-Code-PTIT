@@ -1,8 +1,6 @@
-package j05052;
+package j05053;
 
-import java.util.*;
-
-public class DonHang {
+public class DonHang implements Comparable<DonHang>{
     private String name, id;
     private int donGia, soLuong;
 
@@ -13,28 +11,29 @@ public class DonHang {
         this.soLuong = soLuong;
     }
     
-    public String getMa() {
-        int n = this.id.length();
-        return this.id.substring(n - 1, n);
-    }
-    
     public String getSTT() {
         String tmp = this.id.substring(1, 4);
         return tmp;
-    }
+    } 
     
-    public int getGiamGia() {
-        if (this.getMa().equals("1")) {
+    public double getGiamGia() {
+        String loai = this.id.substring(4, 5);
+        if (loai.equals("1")) {
             return this.donGia * this.soLuong / 2;
         }
         return this.donGia * this.soLuong * 3 / 10;
     }
     
-    public int getThanhTien() {
+    public double getThanhTien() {
         return this.donGia * this.soLuong - this.getGiamGia();
     }
     
     public String toString() {
-        return this.name + " " + this.id + " " + this.getSTT() + " " + this.getGiamGia() + " " + this.getThanhTien();
+        return this.name + " " + this.id + " " + this.getSTT() + " " + String.format("%.0f", this.getGiamGia()) + " " + String.format("%.0f", this.getThanhTien());
+    }
+
+    @Override
+    public int compareTo(DonHang o) {
+        return this.getSTT().compareTo(o.getSTT());
     }
 }
