@@ -1,7 +1,7 @@
-//import java.util.Scanner;
+package code.ptit;
 import java.util.*;
 
-public class J02008 {
+public class J02008_1 {
 
     public static Scanner ip = new Scanner(System.in);
 
