@@ -22,7 +22,7 @@ public class HocSinh {
     public String getId() {
         return id;
     }
-    
+
     public double getDtb() {
 //        return Math.round((this.d1 * 2 + this.d2 * 2 + this.d3 + this.d4 + this.d5 + this.d6 + this.d7 + this.d8 + this.d9 + this.d10) / 12);
         double dtb = (this.d1 * 2 + this.d2 * 2 + this.d3 + this.d4 + this.d5 + this.d6 + this.d7 + this.d8 + this.d9 + this.d10) / 12;

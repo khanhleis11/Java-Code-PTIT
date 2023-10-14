@@ -11,6 +11,10 @@ public class SinhVien {
         this.className = className;
         this.email = email;
     }
+
+    public String getId() {
+        return id;
+    }
     
     public String chuanHoaTen(String s) {
         String res = "";
@@ -20,6 +24,7 @@ public class SinhVien {
             res += tmp.substring(0, 1).toUpperCase();
             res += tmp.substring(1).toLowerCase() + " ";
         }
+        res = res.trim();
         return res;
     }
     
