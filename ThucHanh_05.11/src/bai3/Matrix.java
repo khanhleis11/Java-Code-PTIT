@@ -1,4 +1,4 @@
-package j07076;
+package bai3;
 
 public class Matrix {
     private int n, m;
